@@ -38,7 +38,7 @@ class Course(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='category')
     logo = models.CharField(max_length=20, blank=True)
     contacts = models.ManyToManyField(Contact)
-    branches = models.ManyToManyField(Branch)
+    branches = models.ManyToManyField(Branch, blank=True)
 
     def __str__(self):
         return self.name

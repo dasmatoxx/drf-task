@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('model', models.CharField(max_length=30)),
                 ('year', models.PositiveIntegerField()),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='car', to='category.category')),
+                ('course', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='car', to='course.course')),
             ],
         ),
     ]

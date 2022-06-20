@@ -35,7 +35,7 @@ class Contact(models.Model):
 class Course(models.Model):
     name = models.CharField(max_length=30)
     description = models.TextField()
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='category')
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='course')
     logo = models.CharField(max_length=20, blank=True)
     contacts = models.ManyToManyField(Contact)
     branches = models.ManyToManyField(Branch, blank=True)

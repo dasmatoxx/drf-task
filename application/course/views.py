@@ -7,8 +7,8 @@ from rest_framework.status import HTTP_204_NO_CONTENT
 from rest_framework.views import APIView
 from rest_framework.viewsets import ViewSet
 
-from application.category.models import Category, Branch, Contact, Course
-from application.category.serializers import CategorySerializers, BranchSerializer, ContactSerializer, CourseSerializer
+from application.course.models import Category, Branch, Contact, Course
+from application.course.serializers import CategorySerializers, BranchSerializer, ContactSerializer, CourseSerializer
 
 
 class CategoryView(APIView):

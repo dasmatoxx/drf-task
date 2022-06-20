@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from application.category.models import Category, Branch, Contact, Course
+from application.course.models import Category, Branch, Contact, Course
 
 admin.site.register(Category)
 admin.site.register(Branch)

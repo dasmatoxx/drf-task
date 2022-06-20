@@ -6,26 +6,26 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('category', '0002_alter_category_car_type'),
+        ('course', '0002_alter_category_car_type'),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='category',
+            model_name='course',
             name='car_type',
         ),
         migrations.RemoveField(
-            model_name='category',
+            model_name='course',
             name='description',
         ),
         migrations.AddField(
-            model_name='category',
+            model_name='course',
             name='imgpath',
             field=models.CharField(default='s', max_length=100),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='category',
+            model_name='course',
             name='title',
             field=models.CharField(default='d', max_length=30),
             preserve_default=False,

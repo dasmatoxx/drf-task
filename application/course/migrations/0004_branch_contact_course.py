@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('category', '0003_remove_category_car_type_remove_category_description_and_more'),
+        ('course', '0003_remove_category_car_type_remove_category_description_and_more'),
     ]
 
     operations = [
@@ -35,9 +35,9 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=30)),
                 ('description', models.TextField()),
                 ('logo', models.CharField(blank=True, max_length=20)),
-                ('branches', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='branches', to='category.branch')),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='category', to='category.category')),
-                ('contacts', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='contact', to='category.contact')),
+                ('branches', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='branches', to='course.branch')),
+                ('course', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='course', to='course.course')),
+                ('contacts', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='contact', to='course.contact')),
             ],
         ),
     ]

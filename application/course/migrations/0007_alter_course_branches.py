@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('category', '0006_remove_course_branches_course_branches'),
+        ('course', '0006_remove_course_branches_course_branches'),
     ]
 
     operations = [
         migrations.AlterField(
             model_name='course',
             name='branches',
-            field=models.ManyToManyField(blank=True, to='category.branch'),
+            field=models.ManyToManyField(blank=True, to='course.branch'),
         ),
     ]

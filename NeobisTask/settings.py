@@ -31,8 +31,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #modules
     'rest_framework',
-    'drf-yasg',
-
+    'drf_yasg',
+    #
     #custom app
     'application.course',
 ]
